@@ -11,7 +11,7 @@ learning to solve a version of the travelling salesman problem. IBM Watson
 Machine Learning is used to determine the relative safety of persons in the region
 affected and establish a weighting system for those in the most danger
 
-[Search and Rescue flight path](visualization/flight_path.gif)"
+[Search and Rescue flight path](visualization/flight_path.gif)
 
 The model accounts for limited capacity of the emergency vehciles but does not estimate
 a total time to recover all persons in danger.
