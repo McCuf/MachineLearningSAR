@@ -28,7 +28,7 @@ class SAR:
         plt.scatter(np.array(training_data)[:,0],np.array(training_data)[:,1], cmap=watson_weights, vmin=np.amin(watson_weights), vmax=np.amax(watson_weights))
         plt.show()
 
-    def visualize_path_stochastic(self, key='stochastic'):
+    def visualize_path_stochastic(self, key='stochastic', name='flight.gif'):
         flight_path = None
         flight_path_x = None
         flight_path_y = None
@@ -67,7 +67,7 @@ class SAR:
         anim = FuncAnimation(fig, animate, init_func=init,
                      frames=200, interval=20, blit=True)
 
-        anim.save('flight_path.gif', writer='imagemagick')
+        anim.save(name, writer='imagemagick')
 
 
 
