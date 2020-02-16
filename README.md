@@ -1,7 +1,7 @@
-#Machine Learning Search and Rescue
+# Machine Learning Search and Rescue
 
 ----
-##Cuse Hacks 2020 IBM Challenge
+## Cuse Hacks 2020 IBM Challenge
 
 ---
 ### Info
@@ -11,12 +11,12 @@ learning to solve a version of the travelling salesman problem. IBM Watson
 Machine Learning is used to determine the relative safety of persons in the region
 affected and establish a weighting system for those in the most danger
 
-[]: "![Search and Rescue flight path](visualization/flight_path.gif)"
+[Search and Rescue flight path](visualization/flight_path.gif)"
 
 The model accounts for limited capacity of the emergency vehciles but does not estimate
 a total time to recover all persons in danger.
 
-#Use
+# Use
 
 ---
 The first step is to initialize an instance of the model
@@ -54,7 +54,7 @@ To compute the ordering of the vector positions to visit (Stochastic model):
  indicies is the ordering of the training_data array which is computed by using 
  a different machine learning model developed with the IBM Watson toolkit
  
- ####Brief aside:
+ #### Brief aside:
     from watsonInterface import training_data
  is the unordered array over which the travelling emergency vehicle problem is sovled
     from watsonInterface import watson_weights
