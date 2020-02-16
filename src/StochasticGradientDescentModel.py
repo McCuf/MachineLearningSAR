@@ -176,15 +176,15 @@ def get_Stochastic_Gradient_Descent_Model():
 
     model_pipe_1 = model_fit(sizes=[io_neurons, 15, 15, io_neurons], init_cost=initial_cost)
     pipeline_1_eta = 0.1
-    model_pipe_1.SGD(training_datas=input_data, epochs=1000, mini_batch_size=io_neurons, eta=pipeline_1_eta)
+    model_pipe_1.SGD(training_datas=input_data, epochs=10000, mini_batch_size=io_neurons, eta=pipeline_1_eta)
 
     pipeline_2_eta = pipeline_1_eta / (initial_cost - model_pipe_1.lowest_cost)
     model_pipe_2 = model_fit(sizes=[io_neurons, 15, 15, io_neurons], init_cost = initial_cost)
-    model_pipe_2.SGD(training_datas=input_data, epochs=1000, mini_batch_size=io_neurons, eta=pipeline_2_eta)
+    model_pipe_2.SGD(training_datas=input_data, epochs=10000, mini_batch_size=io_neurons, eta=pipeline_2_eta)
 
     pipe_line_3_eta = pipeline_2_eta / (initial_cost - model_pipe_2.lowest_cost)
     model_pipe_3 = model_fit(sizes=[io_neurons, 15, 15, io_neurons], init_cost = initial_cost)
-    model_pipe_3.SGD(training_datas=input_data, epochs=1000, mini_batch_size=io_neurons, eta=pipe_line_3_eta)
+    model_pipe_3.SGD(training_datas=input_data, epochs=10000, mini_batch_size=io_neurons, eta=pipe_line_3_eta)
 
     if ((model_pipe_3.lowest_cost < model_pipe_2.lowest_cost) and (model_pipe_3.lowest_cost < model_pipe_1.lowest_cost)):
         print("Returning pipeline three. Final attempt at tuning hyper perameters")
