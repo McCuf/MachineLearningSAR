@@ -18,7 +18,7 @@ def watsonInit():
     json_array = np.array([ID, lat, long, dist]).T
     # Paste your Watson Machine Learning service apikey here
     # Use the rest of the code sample as written
-    apikey = "5O6zEGSxyRXE5rJ4zW4bjRr4QRNpqnb5oK1mXvLRrzy5"
+    apikey = None
 
     # Get an IAM token from IBM Cloud
     url     = "https://iam.bluemix.net/oidc/token"
